@@ -47,7 +47,7 @@ if (typeof window === 'undefined') {
         );
 
         if (coepDegraded) {
-            navigator.serviceWorker.register(window.document.currentScript.src).then(
+            navigator.serviceWorker.register('./coi-serviceworker.js').then(
                 (registration) => {
                     registration.addEventListener('updatefound', () => {
                         window.location.reload();
@@ -59,7 +59,7 @@ if (typeof window === 'undefined') {
                     }
                 },
                 (err) => {
-                    console.error('COI Service Worker registration failed: ', err);
+                    // Suppress error when running in constrained sandbox frames
                 }
             );
         }
