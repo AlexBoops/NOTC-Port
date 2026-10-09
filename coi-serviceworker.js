@@ -59,7 +59,7 @@ if (typeof window === 'undefined') {
                     }
                 },
                 (err) => {
-                    // Suppress error when running in constrained sandbox frames
+                    // Silent failover if sandbox blocks registration
                 }
             );
         }
