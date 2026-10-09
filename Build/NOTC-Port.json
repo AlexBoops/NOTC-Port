@@ -1,0 +1,13 @@
+{
+"companyName": "germfood",
+"productName": "NIGHT OF THE CONSUMERS",
+"dataUrl": "NOTC-Port.data.unityweb",
+"asmCodeUrl": "NOTC-Port.asm.code.unityweb",
+"asmMemoryUrl": "NOTC-Port.asm.memory.unityweb",
+"asmFrameworkUrl": "NOTC-Port.asm.framework.unityweb",
+"TOTAL_MEMORY": 0,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000"
+}

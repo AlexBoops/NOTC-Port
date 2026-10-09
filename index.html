@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | NIGHT OF THE CONSUMERS</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/NOTC-Port.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">NIGHT OF THE CONSUMERS</div>
+      </div>
+    </div>
+    <div style="position:fixed;bottom:10px;right:15px;z-index:999;font-family:monospace;font-size:12px;color:#f5e6c8;text-shadow:1px 1px 0 #000;">
+      <span>port by larpman</span><br>
+      <a href="https://wasm.rip" target="_blank" style="color:#f5e6c8;text-decoration:underline;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#f5e6c8'">for wasm.rip</a>
+    </div>
+  </body>
+</html>
